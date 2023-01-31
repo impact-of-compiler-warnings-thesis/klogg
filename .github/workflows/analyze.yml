@@ -24,10 +24,12 @@ jobs:
                            libboost-all-dev \
                            ragel \
                            libhyperscan-dev \
-                           libtbb2-dev \
+                           libtbb-dev \
                            libuchardet-dev \
                            libxxhash-dev \
-                           libmimalloc-dev
+                           libmimalloc-dev \
+                           libdw-dev \
+                           libdwarf-dev
       - name: Install Qt
         uses: jurplel/install-qt-action@v3
         with:
