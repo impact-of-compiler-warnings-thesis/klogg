@@ -22,7 +22,11 @@ jobs:
           sudo apt update
           sudo apt install ninja-build \
                            libboost-all-dev \
-                           ragel
+                           ragel \
+                           libhyperscan-dev \
+                           libtbb2-dev \
+                           libuchardet-dev \
+                           libxxhash-dev
       - name: Install Qt
         uses: jurplel/install-qt-action@v3
         with:
