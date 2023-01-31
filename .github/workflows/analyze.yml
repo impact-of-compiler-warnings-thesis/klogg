@@ -26,7 +26,8 @@ jobs:
                            libhyperscan-dev \
                            libtbb2-dev \
                            libuchardet-dev \
-                           libxxhash-dev
+                           libxxhash-dev \
+                           libmimalloc-dev
       - name: Install Qt
         uses: jurplel/install-qt-action@v3
         with:
