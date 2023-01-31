@@ -36,7 +36,8 @@ jobs:
           mkdir build && cd build
           cmake .. -GNinja \
                    -DCMAKE_BUILD_TYPE=Debug \
-                   -DKLOGG_BUILD_TESTS=ON
+                   -DKLOGG_BUILD_TESTS=ON \
+                   -DCPM_LOCAL_PACKAGES_ONLY=ON
       - name: Run build-wrapper
         run: |
           build-wrapper-linux-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} ninja -C build
