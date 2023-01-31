@@ -40,6 +40,7 @@ jobs:
           cmake .. -GNinja \
                    -DCMAKE_BUILD_TYPE=Debug \
                    -DKLOGG_BUILD_TESTS=ON \
+                   -DKLOGG_USE_HYPERSCAN=OFF \
                    -DCPM_USE_LOCAL_PACKAGES=ON \
                    -DCPM_LOCAL_PACKAGES_ONLY=OFF
       - name: Run build-wrapper
